@@ -1,4 +1,4 @@
-package com.reactlibrary;
+package com.reactlibrarynativepaymentmidtrans;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
@@ -23,5 +23,10 @@ public class PaymentMidtransModule extends ReactContextBaseJavaModule {
     public void sampleMethod(String stringArgument, int numberArgument, Callback callback) {
         // TODO: Implement some actually useful functionality
         callback.invoke("Received numberArgument: " + numberArgument + " stringArgument: " + stringArgument);
+    }
+
+    @ReactMethod
+    public void checkout(String text) {
+        android.widget.Toast.makeText(, "", android.widget.Toast.LENGTH_LONG).show();
     }
 }
