@@ -27,6 +27,6 @@ public class PaymentMidtransModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void checkout(String text) {
-        android.widget.Toast.makeText(, "", android.widget.Toast.LENGTH_LONG).show();
+        android.widget.Toast.makeText(reactContext, "", android.widget.Toast.LENGTH_LONG).show();
     }
 }
